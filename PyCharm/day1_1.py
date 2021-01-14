@@ -1,18 +1,5 @@
 
-
-
-# 실행은? [Run]-[Run]
 print('Hello world')
-
-# 혹 실행이 안된다 ?
-# => [File]-[Settings]
-# [Project]-[Python Interpreter] 화면에서
-# 인터프리터 설정해주셔야 합니다.
-
-
-
-# 교재 부분은 온라인 참조
-# https://wikidocs.net/book/1
 
 # 한줄주석  (ctrl+/)
 # 인용부호 3개 이용
@@ -84,7 +71,6 @@ print(myWord)
 del myWord
 # print(myWord)
 # NameError: name 'myWord' is not defined
-
 
 # 퀴즈 : user1, user2의 변수값을 서로 변경하여라
 user1 = "영희"
