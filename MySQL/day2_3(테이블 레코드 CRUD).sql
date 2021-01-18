@@ -49,3 +49,43 @@ INSERT INTO buytbl3
 SELECT COUNT(*) FROM buytbl3;
 SELECT * FROM buytbl3;
 
+-- 레코드 수정
+-- UPDATE 테이블명 SET 컬럼명=값 WHERE 절;
+SELECT * FROM buytbl2;
+-- buytbl2의 userid 가 KBS 인 레코드에서 amount 값을 10으로 변경하여라 
+UPDATE buytbl2 SET amount = 10 WHERE userid = 'KBS';
+SELECT * FROM buytbl2 WHERE userid = 'KBS';        
+
+-- WHERE 절이 생략된 경우에는 모든 레코드에서 업데이트가 진행   
+-- buytbl2 테이블에서 레코드의 price 가격 모두를 150%로 변경하여라 
+-- price*1.5
+SELECT * FROM buytbl2; 
+UPDATE buytbl2 SET price = price*1.5;
+SELECT * FROM buytbl2; 
+SELECT * FROM buytbl;         
+
+-- 특정 레코드 삭제 
+-- DELETE FROM 테이블명 WHERE 절 
+-- WHERE 절 생략시 레코드 모두 삭제 
+SELECT * FROM buytbl2; 
+
+-- buytbl2 테이블에서 전자 종목의 레코드를 모두 삭제 
+DELETE FROM buytbl2 WHERE groupName = '전자';
+SELECT * FROM buytbl2; 
+
+-- WHERE 절 생략시 레코드 모두 삭제 
+DELETE FROM buytbl2;
+SELECT * FROM buytbl2; 
+
+-- 테이블 삭제 
+-- DROP TABLE 테이블명;
+DROP TABLE buytbl2;
+SHOW TABLES;
+
+-- 테이블 구조 제외 레코드만 삭제 
+-- TRUNCATE TABLE 테이블명;
+SELECT * FROM buytbl3;
+TRUNCATE TABLE buytbl3;
+SHOW TABLES;
+SELECT * FROM buytbl3;
+
