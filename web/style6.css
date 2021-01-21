@@ -1,0 +1,54 @@
+/* web_6.html 문서와 연결 */
+
+/* 태그선택자 h1 디자인 */
+h1{text-align: center; border-bottom: dashed black 1px;}
+
+/* 자손 선택자 
+    : 특정 부모 요소 안의 삽입된 태그 접근
+      부모요소선택자 자손선택{속성1:값1; 속성2:값2; ... */
+
+/* #box1 선택자안의 모든 div 요소 */
+/* padding : 상하좌우동일값 */
+/* padding-top/padding-bottom/padding-left/padding-right */
+#box1 div{border: 1px solid red; padding:5px}
+
+/* 자식 선택자
+    : 부모요소선택자 > 자식선택{속성1:값1; 속성2:값2; ... */
+#box1 > #boxA > .box{text-align: center; color: lightskyblue;}
+#box1 > h2{color: goldenrod; font-size: 2em;}
+
+/* 순서 선택자 
+    선택자:first-child
+    선택자:last-child
+   부모요소를 기준으로 위치 선정 
+    선택자:nth-child(odd/even/숫자/수식) */
+/* 첫번째 리스트 디자인 */
+#ulBox > li:first-child{background-color: darksalmon;}
+/* 마지막 리스트 디자인 */
+#ulBox > li:last-child{background-color: rgb(103, 156, 218);}
+/* 3번째 리스트 디자인 */
+#ulBox > li:nth-child(3){background-color:aquamarine;}
+/* 짝수번째 리스트 디자인 */
+#ulBox > li:nth-child(even){font-weight: bold; font-size: 1.2em;}
+
+/* 하이퍼링크 디자인 */
+/* a 태그 전체 - 밑줄없음*/
+a{text-decoration: none;}
+
+/* #navBox1 안의 li안의 a */
+#navBox1 > li > a{color: black; font-weight: bold;}
+
+/* #navBox1 안의 li안의 a 태그의 롤오버 상태 :hover */
+#navBox1 > li > a:hover {color:crimson}
+
+/* #navBox2 안의 li안의 a
+        #navBox2 > li > a:link {} # 보통상태
+        #navBox2 > li > a:visited {} # 방문상태
+        #navBox2 > li > a:hover {} # 롤오버상태
+        #navBox2 > li > a:active {} : 활성상태 */
+#navBox2 > li > a:link { color:yellowgreen } 
+#navBox2 > li > a:visited { color:yellowgreen }
+#navBox2 > li > a:hover { text-decoration: underline; color: brown;} 
+#navBox2 > li > a:active { color:green }
+    
+
