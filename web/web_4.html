@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 배우기1</title>
+</head>
+<body>
+    <!-- 인라인방식 : 직관적. 우선순위가 높다.
+         <html태그 style="css속성1:값1;css속성2:값2;..."> -->
+
+    <!-- h1{Heading1}+h2{Heading2}+hr+p{Paragraph}*3+ul>li{목록$}*5 -->
+    <!-- 글자색상(color), 가운데정렬(text-align), 밑줄(text-decoration) -->
+    <h1 style=" color:crimson; 
+                text-align:center;
+                text-decoration:underline">
+        Heading1</h1>
+
+    <!-- 글자크기(font-size), 오른쪽정렬(text-align), 자간(letter-spacing)  
+         1em = 100%, px, pt -->
+    <h2 style=" font-size:3em; 
+                text-align:right; 
+                letter-spacing:10px">
+        Heading2</h2>
+
+    <hr>
+    <!-- 가로크기(width), 세로크기(height), 배경색상(background-color)  -->
+    <p style="width:50%;background-color:gold">Paragraph</p>
+    <p style="width:200px;height:200px;
+                background-color:greenyellow">Paragraph</p>
+    <p style="height:100px;background-color:orange">Paragraph</p>
+
+    <!-- ul => 줄간격(line-height), 글자색상(color), 
+               글머리표(list-style-type) 
+         li => 배경색상(background-color)-->
+    <ul style="line-height:200%; color:deeppink; 
+                list-style-type:none;">
+        <li>목록1</li>
+        <li>목록2</li>
+        <li style="background-color: chartreuse;">목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ul>
+</body>
+</html>

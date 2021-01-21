@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>아이프레임</h1>    
+    <!-- 아이프레임(iframe/floating Frame)이란?
+            : 별도의 웹페이지나 동영상무비등을 이미지나 글처럼 현재 삽입하는 기능 
+        인라인요소 
+        iframe[name=iframe width=500 width=300 src=pink.html] -->
+    <iframe src="pink.html" 
+        frameborder="0" name="iframe" width="500" width="300">
+    </iframe>
+    <!-- 아이프레임 영역으로 하이퍼링크 연결  -->
+    <ul>
+        <li><a href="black.html" target="iframe">black.html</a></li>
+        <li><a href="pink.html" target="iframe">pink.html</a></li>
+        <li><a href="http://google.com" taret="iframe">Google</a></li>
+        <li><a href="smile/greedy.png" target="iframe">greedy.png</a></li>
+    </ul>
+    <hr>
+    <h2>유튜브 뮤비 삽입하기</h2>
+    <iframe width="644" height="362" src="https://www.youtube.com/embed/pBuZEGYXA6E" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</body>
+</html>

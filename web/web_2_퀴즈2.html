@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 - 폼문서 만들기2</title>
+</head>
+<body>
+    <h1>QUIZ</h1>
+    <form action="">
+        <h2>수강 신청서</h2>
+        <label>성명
+            <input type="text" name="">
+        </label><br><br>
+        <label>비밀키
+            <input type="password" name="">
+        </label><br><br>
+        <label>주소
+            <input type="text" name="">
+        </label><br><br>
+        <label>교육과정
+            <select name="" id="">
+                <option value=""><---- 교육과정을 선택해주세요 ----></option>
+                <option value="1">교육과정1</option>
+                <option value="2">교육과정2</option>
+                <option value="3">교육과정3</option>
+            </select>
+        </label><br><br>
+        <fieldset>
+            <legend>희망 타임</legend>
+            오전 9:00<input type="radio" name="9AM" id="" checked>
+            오후 1:00<input type="radio" name="1PM" id="">
+            오후 7:00<input type="radio" name="7PM" id="">
+        </fieldset>
+        <fieldset>
+            <legend>알게된 동기</legend>
+            친구<input type="checkbox" name="friend" id="" checked>
+            배너광고<input type="checkbox" name="banner" id="">
+            잡지,신문<input type="checkbox" name="news" id="">
+            메일<input type="checkbox" name="mail" id="">
+            기타<input type="checkbox" name="etc" id="">
+        </fieldset><br>
+        <label for="">기타 문의사항
+            <textarea name="" id="" cols="50" rows="10">궁금한 점을 정확하게 입력하여 주시면 빠른 시일내에 연락드리겠습니다.
+            </textarea>
+        </label><br><br>
+        <button type="submit">전송</button>
+        <button type="reset">다시</button>
+    </form>
+</body>
+</html>

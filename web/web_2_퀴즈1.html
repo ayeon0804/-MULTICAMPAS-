@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 - 폼문서 만들기1</title>
+</head>
+<body>
+    <h1>QUIZ</h1>
+    <form action="">
+        <table border="1" width="1000" cellpadding="10" cellspacing="0">
+            <tr>
+                <th align="left">인증방식 선택</th>
+                <td colspan="3">
+                        <input type="radio" name="mobilePhone" checked>휴대폰 번호
+                        <input type="radio" name="email" >이메일
+                </td>
+            </tr>
+            <tr>
+                <th align="left">휴대폰 번호
+                <td colspan="3">
+                    <select name="number1" id="">
+                        <option value="">010</option>
+                        <option value="">011</option>
+                        <option value="">016</option>
+                        <option value="">017</option>
+                        <option value="">018</option>
+                        <option value="">019</option>
+                    </select>
+                    -
+                    <input type="text" name="number2">
+                    -
+                    <input type="text" name="number3">
+                    <button>인증번호요청</button>
+                </td>
+            
+            </tr>
+            <tr>
+                <th align="left">인증번호</th>
+                <td colspan="3">
+                    <input type="text" name="number" id="">
+                </td>
+            </tr>
+            <tr>
+                <th align="left">이름</th>
+                <td colspan="3">
+                    <input type="text" name="name" id="">
+                    가입자 본인의 실명을 입력하세요
+                </td>
+            </tr>
+            <tr>
+                <th align="left">성별</th>
+                <td>
+                    <input type="radio" name="woman" id="">여자
+                    <input type="radio" name="man" id="">남자
+                </td>
+                <th align="left">생년원일</th>
+                <td>
+                    <input type="date" name="birthDate" id="">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 배우기2</title>
+</head>
+<body>
+    <h1>폼문서</h1>
+    <form action="http://google.com">
+        <h2>Form1</h2>
+        <!-- 폼버튼 : 제출용도 -->
+        <button>Action Test</button>
+        <input type="submit" value="Action Test2">
+        <hr>
+        <!-- label : 텍스트필드에 제목을 달아주는 역할
+                     for : 텍스트필드의 아이디값과 연결
+             input : text => 텍스트필드
+                            : 한줄 글상자 -->
+        <label for="inputBox1">텍스트필드1</label>
+        <input type="text" id="inputBox1">
+        <hr>
+        <label>텍스트필드2
+            <input type="text">
+        </label>
+        <hr>
+        <!-- input:password => 암호텍스트필드 
+             textarea : 여러줄글상자 
+                        cols : 가로글자갯수
+                        rows : 세로줄수 -->
+        <label for="pwdInputBox">암호텍스트필드</label>
+        <input type="password" name="" id="pwdInputBox">
+        <hr>
+        <label for="">여러줄글상자</label><br>
+        <textarea name="" id="" cols="30" rows="3">메세지입력</textarea>
+        <hr>
+        <!-- input : file => 파일첨부상자  -->
+        <!-- label{파일첨부}+input:file+hr -->
+        <label for="fileBox">파일첨부</label>
+        <input type="file" name="" id="fileBox">
+        <hr>
+        <!-- fieldset>legend{제목}
+             : 그룹핑역할. 사각테두리 생성
+             : 제목은 legend로 설정 -->
+        <fieldset>
+            <legend>검색어</legend>
+            <input type="search" name="" id="">
+        </fieldset>
+        <!-- input : radio
+                     : 같은 그룹에서 하나만 선택
+                     : 주의사항은 같은 그룹안의 다른 아이템에서 name 값이 동일 -->
+        <hr>
+        <fieldset>
+            <legend>성별선택</legend>
+            <label for="">남자
+                <input type="radio" name="gender">
+            </label>
+            <label for="">여자
+                <input type="radio", name="gender">
+            </label>
+        </fieldset>
+        <hr>  
+        <!-- input : checkbox
+                   : 같은 그룹에서 여러개 선택 가능 
+                   : checked - 초기상태가 선택된 상태로 표시 -->
+        <fieldset>
+            <legend>취미선택</legend>
+            <label for="hobby1">캠핑</label>
+            <input type="checkbox" name="" id="hobby1" checked>
+            <label for="hobby2">게임</label>
+            <input type="checkbox" name="" id="hobby2">
+            <label for="hobby3">페인팅</label>
+            <input type="checkbox" name="" id="hobby3">
+        </fieldset>
+        <!-- select>option
+             : 드롭다운메뉴 = 셀렉트메뉴
+             : 적은공간에서 많은 아이템을 사용해야 할 경우 사용 -->
+        <hr>
+        <label for="job">직업선택</label>
+        <select name="" id="job">
+            <option>====== SELECT ======</option>
+            <option value="학생">학생</option>
+            <option value="회사원">회사원</option>
+            <option value="자영업">자영업</option>
+            <option value="기타">기타</option>
+        </select>
+        <!-- input:reset => 취소버튼 : 폼문서의 초기화 
+                            전송 버튼 : form의 action 값으로 지정한 url로 이동
+                                1. button{전송}
+                                2. input:submit -->
+        <hr>
+        <input type="reset" value="초기화">
+        <input type="submit" value="제출">
+        <!-- HTML5 폼요소 
+             input:search 
+             input:color 
+             input:date
+             input:time
+             input:email => 유효성검사 입력란에 @ 확인  
+             input:url => 유효성검사 입력란에 웹사이트주소인지 확인 -->
+        <hr>
+        <label for="colorSel">색상선택</label>
+        <input type="color" name="" id="colorSel">
+        <hr>
+        <label for="emailBox">이메일입력</label>
+        <input type="email" name="" id="emailBox">
+        <hr>
+        <label for="url">URL입력</label>
+        <input type="url" name="" id="url">
+        <hr>
+        <input type="submit", value="전송">
+    </form>
+
+</body>
+</html>

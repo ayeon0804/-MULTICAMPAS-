@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 배우기2</title>
+    <!-- css 정의 -->
+    <style>
+        /* css 영역 */
+        /* 태그 선택자 : 적용과정이 필요없고 모든 태그에 디자인 자동 적용
+           태그명 {속성1:값1; 속성2:값2; ...} */
+        /* h1 태그 : 글자색상(color), 가운데정렬(text-align), 밑줄(text-decoration) */
+        h1{color:cadetblue; text-align: center; text-decoration: overline;}
+        /* p태그 : 가로크기(width), 세로크기(height), 배경색상(background-color), 글자색상(color) */
+        p{width: 200px; height: 200px; background-color:brown; color: cornsilk;}
+
+        /* 클래스 선택자 : html 요소중에서 필요한 부분에 직접 적용가능. 
+                         : 중복 적용 가능  
+            Step1 > 정의 
+                .클래스이름 { 속성1:값1; 속성2:값2; ... }
+            Step2> 적용
+                <태그명 class="클래스이름"> */
+        /* 글자일부에 적용할 클래스 정의 
+            - 검정색배경, 흰색글자, 글자크기, 진하게(font-weight) */
+        .blackWhite{background-color: black; color: white; font-size: 2em; font-weight: bold;}
+        /* img 태그에 적용될 클래스 디자인 정의
+           테두리굵기(border-width)
+           테두리색상(border-color)
+           테두리색상(border-style) : solid, double, dashed, dotted ...
+           테두리(border) 
+           테두리(border-top/border-bottom/border-left/border-right */
+        .gallery1{border-style: solid; border-width: 5px; border-color: teal;}
+        .gallery2{border: double 10px coral}
+        .gallery3{border-right: dashed 1px red;}
+
+        /* 아이디 선택자 : html 요소중에서 필요한 부분에 직접 적용가능. 
+                         : 문서에서 한번만 디자인 적용 가능  
+            Step1 > 정의 
+                #아이디이름 { 속성1:값1; 속성2:값2; ... }
+            Step2> 적용
+                <태그명 id="아이디이름"> */
+        #input1, #input2 { border:1px solid black; background-color: lightyellow;}
+
+
+    </style>
+</head>
+<body>
+    <h1>Heading<span class="blackWhite">1</span></h1>
+    <!-- span : 글자 일부의 영역지정시 사용 -->
+    <h2>
+        <span class="blackWhite">H</span>eading2
+    </h2>
+    <hr>
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ul>
+    <hr>
+    <img src="smile/bad_smile.png" alt="bad_smile" class="gallery1">
+    <img src="smile/byebye.png" alt="byebye" class="gallery2">
+    <img src="smile/waaaht.png" alt="waaaht" class="gallery3">
+    <hr>
+    <form action="">
+        <label for="input1">userId
+            <input type="text" id="input1">
+        </label>
+        <label for="input2">Password
+            <input type="text", id="input2">
+        </label>
+    </form>
+</body>
+</html>
