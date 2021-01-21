@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- HEAD영역 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 문서 제목 : 탭 부분에 표시 -->
+    <title>HTML 배우기1</title>
+</head>
+
+<!-- BODY영역 -->
+<body>
+    <!-- h1 ~ h6
+        : 글자가 진하게
+        : 숫자가 클수록 글자가 작아진다.
+        : heading -->
+    <h1>제목1</h1> 
+    <h2>제목2</h2>
+    <h6>제목6</h6>
+    <!-- p : 문단생성
+            : paragraph
+        br : 줄바꿈
+          : break line -->
+    <p>
+        동해물과 백두산이 마르고 닳도록<br>
+        하느님이 보우하사 우리나라만세<br>
+        (후렴)무궁화 삼천리 화려강산 대한사람<br> 
+        대한으로 길이 보전하세
+    </p>
+
+    <p>
+        남산위에 저 소나무 철갑을 두른듯<br/>
+        바람서리 불변함은 우리기상 일세<br/>
+        (후렴)무궁화 삼천리 화려강산<br/>
+        대한사람 대한으로 길이보전하세
+    </p>
+    <!-- ul>li : 목록문단
+         ol>li : 순서목록문단
+
+        ul: unordered list
+        ol: ordered list
+        li : list -->
+    <ul>
+        <li>바나나</li>
+        <li>포도</li>
+        <li>수박</li>
+    </ul>
+    <ol>
+        <li>Python</li>
+        <li>MySQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ol>
+    <!-- dl>(dt+dd) : 정의문단
+         dl : definition list
+         dt : definition title
+         dd : definition data -->
+    <dl>
+        <dt>RBG란?</dt>
+        <dd>R:Red</dd>
+        <dd>G:Green</dd>
+        <dd>B:Blue</dd>
+        <dt>웹언어</dt>
+        <dd>HTML</dd>
+        <dd>CSS</dd>
+        <dd>JS</dd>
+    </dl>
+    <!-- hr: 수평선 
+           : horizontal rule  -->
+    <hr />
+    <hr>
+    <!-- blockquote : 인용문에 사용 
+                    : 들여쓰기되어 앞뒤에 여백 생성 -->
+    <blockquote>
+        가을하늘 공활한데 높고 구름없이 밝은달은 우리가슴 일편단심일세
+        (후렴)무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+    </blockquote>
+    <hr>
+    <!-- Emmet 코딩 방식으로 HTML 입력하기
+         태그명1+태그명2... [ctrl+spaceBar]
+         태그명*3 [ctrl+spaceBar]]  반복
+         $ 자동숫자증감
+         {} 내용입력
+         () 그룹핑
+         [] 속성  -->
+    
+    <!-- 같은 레벨의 태그 자동완성 -->
+    <!-- h1+p+hr -->
+    <h1>제목1</h1>
+    <p>문단</p>
+    <hr>
+    <!-- 태그 반복 -->
+    <!-- p*3 -->
+    <p>문단a</p>
+    <p>문단b</p>
+    <p>문단c</p>
+    <!-- >를 이용한 부모요소와 자식요소 정의 -->
+    <!-- ul>li*5 -->
+    <ul>
+        <li>도</li>
+        <li>레</li>
+        <li>미</li>
+        <li>파</li>
+        <li>솔</li>
+    </ul>
+    <hr>
+    <!-- dl>dt+dd*2 -->
+    <dl>
+        <dt>성별</dt>
+        <dd>여자</dd>
+        <dd>남자</dd>
+    </dl>
+    <hr>
+    <!-- $ 자동숫자증감 -->
+    <!-- h$*6 -->
+    <h1>Headindg1</h1>
+    <h2>Headindg2</h2>
+    <h3>Headindg3</h3>
+    <h4>Headindg4</h4>
+    <h5>Headindg5</h5>
+    <h6>Headindg6</h6>
+    <hr>
+    <!-- {} 내용입력 -->
+    <!-- ol>li{목록}*5 -->
+    <ol>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+    </ol>
+    <hr>
+    <!-- dl>(dt{제목$}+dd{내용$})*3 -->
+    <dl>
+        <dt>제목1</dt>
+        <dd>내용1</dd>
+        <dt>제목2</dt>
+        <dd>내용2</dd>
+        <dt>제목3</dt>
+        <dd>내용3</dd>
+    </dl>
+    <!-- a : anchor
+            파일(html, 이미지, 웹상주소)과 연결기능 
+            인라인요소 
+            텍스트 하이퍼링크 
+            <a href='URL'> 글자  
+            href : 하이퍼링크 URL
+            title : 툴팁 기능
+            target : _blank, _new 값 지정시 새탭에서 결과 url 표시
+            </a> -->        
+    <p>
+        <a href="http://www.naver.com">네이버</a>
+    </p>
+    <p>
+        <a href="http://www.google.com" title="구글 사이트로 이동" target="_blank">구글</a>
+    </p>
+    <!-- [] 속성 -->
+    <!-- ul>(li>a[url=http:// target=_blank]{메뉴$})*3 -->
+    <ul>
+        <li><a href="http://daum.net" target="_blank">메뉴1</a></li>
+        <li><a href="http://google.com" target="_blank">메뉴2</a></li>
+        <li><a href="http://naver.com" target="_blank">메뉴3</a></li>
+    </ul>
+    <!-- HTML 태그 종류 : 인라인 요소 - a, em, i, b, strong, img
+                          블록요소 - h1~h6, p, ul, ol, li, dl, dt, dd -->
+    <!-- em / i => 기울임꼴
+         strong / b => 진하게 -->
+    <hr>
+    <p>
+        이 <b>기상</b>과 이 맘으로 <strong>충성</strong>을 다하여 <br>
+        괴로우나 즐거우나 <i>나라사랑하세</i>
+    </p>
+    <!-- image 삽입
+        <img src=이미지경로 alt=대체텍스트 > 
+        <img src=이미지경로 alt=대체텍스트 />
+        src = source
+        alt = alternate text : 이미지 대신 나오는 글자 
+        width/height/border : 인라인 요소 
+        
+        웹이미지 => 웹에 사용되는 이미지 
+        png, jpg, jpeg, gif => 비트맵
+        svg => 벡터  -->
+    <hr>
+    <!-- 웹상 이미지 : 이미지 주소 복사 명력 이용 => 웹상경로 -->
+    <img src="https://lh3.googleusercontent.com/proxy/mixUgpBCUI1nO7hbFQE6osqiY_ihr1TZ-nATY3-pzgGTATVire1e2X0DA1K35ZV00xcWXD3tkFYDMkattmkTQTwlW_18VcKkMdz2WXncXvM2vzh9QA" 
+         alt="고양이">
+    <!-- 상대경로 : 현재 문서 기준 -->
+    <ul>
+        <li><img src="smile/greedy.png" alt="greedy"></li>
+        <li><img src="smile/bad_smile.png" alt="bad_smile"></li>
+        <li><img src="smile/dribble.png" alt="dribble"></li>
+    </ul>
+    <hr>
+    <!-- 이미지 하이퍼링크 
+        <a href='URL'> 
+            <img src=이미지경로 atl=대체텍스트>
+        </a> -->
+    <!-- div : 블록 지정시 사용 -->
+    <h2>배너</h2>
+    <div>
+        <a href="http://youtube.com" target="_blank">
+            <img src="https://i.pinimg.com/originals/21/22/ee/2122ee7f9df41666d2ff5c634d6a5c2d.png" 
+                 alt="유튜브 로고">
+        </a>
+    </div>
+    <hr>
+    <!-- table 
+         table>tr>td
+         table>tr>th
+         tr : table row  - 행 
+         td : table data - 셀 
+         th : table head - 제목셀, 글내용이 중앙정렬, 진하게표시
+
+         관련속성들... 
+            border : 테두리 
+            width / height : 가로 세로 크기 
+            cellpadding : 셀 안쪽여백 
+            cellspacing : 셀과 셀 사이 여백 
+            align : 가로 정렬 center/right/left
+            valign : 셀의 세로 정렬 top/middle/bottom
+            bordercolor: 테두리 색상 
+            bgcolor : 배경 색상 -->
+    <h2>2행 2열 테이블</h2>
+    <table border="1">
+        <!-- 1행 -->
+        <tr>
+            <th>1-1</th>
+            <th>1-2</th>
+        </tr>
+        <!-- 2행 -->
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+        </tr>
+    </table>
+    <h2>3행 3열 테이블</h2>
+    <!-- bgcolor 배경 색상. 
+         색상값은 영문색상명이나 16진수 색상코드값 
+         https://www.w3schools.com/colors/colors_names.asp -->
+    <table border="1" width="500" align="center" cellpadding="10" cellspacing="0" border="crimson">
+        <tr>
+            <!-- 셀기준 중앙정렬 -->
+            <td align="center">cell1</td>
+            <!-- 글자 진하게, 가운데 정렬 -->
+            <th>cell2</th>
+            <td bgcolor="#75aabf">cell3</td>
+        </tr>
+        <tr>
+            <td bgcolor="#e2aabf">cell1</td>
+            <td>cell2</td>
+            <td>cell3</td>
+        </tr>
+        <tr>
+            <td>cell1</td>
+            <td>cell2</td>
+            <td>cell3</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>3행4열 테이블</h2>
+    <!-- 셀합치기 
+            colspan : 가로합치기 
+            rowspan : 세로합치기 
+            주의사항: 셀을 합치고 나머지는 삭제하거나 주석처리한다. -->
+    <table border="1" width="300" align="center" cellpadding="10" cellspacing="0">
+        <!-- 1행 1열 + 1행 2열 + 1행 3열 -->
+        <tr>
+            <td colspan="3" bgcolor="gray">cell 1</td>
+            <!-- <td>cell 2</td>
+            <td>cell 3</td> -->
+            <!-- 4열 모두 합치기 -->
+            <td rowspan="3" bgcolor="yellow">cell 4</td>
+        </tr>
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+            <td>cell 3</td>
+            <!-- <td>cell 4</td> -->
+        </tr>
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+            <td>cell 3</td>
+            <!-- <td>cell 4</td> -->
+        </tr>
+    </table>
+</body>
+</html>
