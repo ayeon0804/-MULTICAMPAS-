@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <h1>World City Table</h1>
+        <hr>
+        <form action="/search_list">
+            <input type="text" name='country_name' required placeholder="country name">
+            <button>검색</button>
+        </form>
+        <h2> 총 레코드 수 : {{totalCount}}</h2>
+        <hr>
+        <p class="add"><a href="/country_add" class="btn">레코드 추가</a></p>
+        <hr>
+        <table border="1" align="center">
+            <tr>
+                <th>No</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>GNP</th>
+                <th>Pop</th>
+                <th>View</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+            {% for item in country_list %}
+            <tr>
+                <td>{{item.No}}</td>
+                <td>{{item.Code}}</td>
+                <td>{{item.Name}}</td>
+                <td>{{item.GNP}}</td>
+                <td>{{item.Population}}</td>
+                <td><a href="/country/{{item.No}}" class="btn">Detail Page</a></td>
+                <td><a href="/country_delete/{{item.No}}" class="btn">Delete Page</a></td>
+                <td><a href="/country_update/{{item.No}}" class="btn">Update Page</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

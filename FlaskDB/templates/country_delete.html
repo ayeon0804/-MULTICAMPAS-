@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <h1>{{country.Name}} Record Delete</h1>
+        <hr>
+            <table cellpadding="10" cellspacing="0" align="center">      
+                <tr><th>Code</th>
+                    <td>{{country.Code}}</td></tr>
+                <tr><th>Name</th>
+                    <td>{{country.Name}}</td></tr>
+                <tr><<th>GNP</th>
+                    <td>{{country.GNP}}</td></tr>
+                <tr><th>Population</th>
+                    <td>{{country.Population}}</td></tr>
+                <tr><td colspan="2">
+                    삭제진행<br><br>
+                    <a href="/country_delete_commit/{{country.No}}" class="btn">네</a>&nbsp;&nbsp;/&nbsp;&nbsp;
+                    <a href="/" class="btn">아니오</a>
+                </td></tr>
+            </table>
+        <hr>
+        <p><a href="/" class="btn">첫페이지로 이동</a></p>
+    </body>
+</html>

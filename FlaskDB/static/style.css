@@ -1,0 +1,9 @@
+*{text-align: center;}
+h1,h2 {text-align: center;}
+form {text-align: center;}
+form input {border:1px solid black; padding:5px}
+table th {background-color: lightgray;}
+table {border-collapse: collapse;}
+table th, td {border: 1px solid gray;}
+.btn {background-color: lightblue; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;}
+.add {width: 900px; text-align: right;}

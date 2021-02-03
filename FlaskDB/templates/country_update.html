@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <h1>{{country.Name}} Update</h1>
+        <hr>
+        <form action="/country_update_commit" method='POST'> 
+            <table cellpadding="10" cellspacing="0" align="center">
+                <th>No</th>
+                    <td><input type="text" name="No" required value={{country.No}} readonly></td></tr>
+                <th>Code</th>
+                    <td><input type="text" name="Code" required value={{country.Code}} readonly></td></tr>
+                <tr><th>Name</th>
+                    <td><input type="text" name="Name" required value={{country.Name}} readonly></td></tr>
+                <tr><th>GNP</th>
+                    <td><input type="text" name="GNP" required value={{country.GNP}}></td></tr>
+                <tr><th>Population</th>
+                    <td><input type="text" name="Population" required value={{country.Population}}></td></tr>
+            </table>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <hr>
+        <p><a href="/" class="btn">첫페이지로 이동</a></p>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <h1>World City Insert</h1>
+        <hr>
+        <form action="/country_add_commit" method='POST'> 
+            <table cellpadding="10" cellspacing="0" align="center">
+                <tr>
+                    <th><label>Code</th>
+                        <td><input type="text" name="Code" required></label></td>
+                    <th><label>Name</th>
+                        <td><input type="text" name="Name" required></label></td>
+                    <th><label>GNP</th>
+                        <td><input type="text" name="GNP" required></label></td>
+                    <th><label>Population</th>
+                        <td><input type="text" name="Population" required></label></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <hr>
+        <p><a href="/" class="btn">첫페이지로 이동</a></p>
+    </body>
+</html>
