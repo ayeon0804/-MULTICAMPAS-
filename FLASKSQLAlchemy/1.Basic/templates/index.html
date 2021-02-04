@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h3>전체학생</h3>
+        <h3>학생추가</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>PIN</th>
+                </tr>
+            </thead>
+            {% for student in students %}
+            <tbody>
+                <tr>
+                    <td>{{student.name}}</td>
+                    <td>{{student.city}}</td>
+                    <td>{{student.addr}}</td>
+                    <td>{{student.pin}}</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </body>
+</html>

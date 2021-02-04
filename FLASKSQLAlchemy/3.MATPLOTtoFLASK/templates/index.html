@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <img src="/matplot-imag.png" width="200" height="200">
+        <hr>
+        <h2>Random data with number x = {{num_x}}</h2>
+        <form action="/" method="GET">
+            <input type="number" name="num_x" value="{{num_x}}"/>
+            <input type="submit" value="update graphe"/>
+        </form>
+        <hr>
+        <img src="/matplot-imag-{{num_x}}.png" width="300" height="300">
+    </body>
+</html>
